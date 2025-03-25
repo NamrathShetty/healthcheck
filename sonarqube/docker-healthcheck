@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+set -Eeuo pipefail
 
 # A Sonarqube container is considered healthy if the status is UP, DB_MIGRATION_NEEDED or DB_MIGRATION_RUNNING
 # status about migration are added to prevent the node to be kill while sonarqube is updating himself.

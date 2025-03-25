@@ -1,5 +1,6 @@
-#!/bin/bash
-set -eo pipefail
+#!/usr/bin/env bash
+
+set -Eeuo pipefail
 
 if [ "$MYSQL_RANDOM_ROOT_PASSWORD" ] && [ -z "$MYSQL_USER" ] && [ -z "$MYSQL_PASSWORD" ]; then
 	# there's no way we can guess what the random MySQL password was

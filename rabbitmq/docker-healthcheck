@@ -1,5 +1,6 @@
-#!/bin/bash
-set -eo pipefail
+#!/usr/bin/env bash
+
+set -Eeuo pipefail
 
 # A RabbitMQ node is considered healthy if all the below are true:
 # * the rabbit app finished booting & it's running
